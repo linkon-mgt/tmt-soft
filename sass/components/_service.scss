@@ -1,0 +1,69 @@
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+#service{
+    @include pgap(80px,80px,0,0);
+    .service-head{
+        padding-bottom: 140px;
+        h2{
+            @include font('Libre Baskerville', 48px, 700, $service);
+            text-transform: capitalize;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 3px;
+                background-color: $serviceafter;
+            }
+        }
+    }
+    .service-item{
+        @include pgap(40px,60px,15px,30px);
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px #000;
+        margin-bottom: 40px;
+        height: 600px;
+        position: relative;
+        .service-top{
+            padding-bottom: 45px;
+            .service-top-text{
+                h4{
+                    @include font('Roboto', 26px, 700, $banner2);
+                    text-transform: capitalize; 
+                    line-height: 35px;
+                }
+            }
+        }
+        .service-middle{
+            padding-bottom: 70px;
+            .service-middle-text{
+                p{
+                    @include font('Roboto', 16px, 400, $banner2);
+                    text-transform: capitalize; 
+                }
+            }
+        }
+        .service-bottom{
+            position: absolute;
+            left: 30px;
+            bottom: 70px;
+            a{
+                @include pgap(18px,18px,40px,40px);
+                background-color: $servicebtn;
+                @include font('Roboto', 16px, 400, $normal);
+                text-transform: capitalize; 
+                margin-left: 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+
+

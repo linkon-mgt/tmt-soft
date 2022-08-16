@@ -1,0 +1,590 @@
+/*===========================================
+|   |   |    COMMON CSS START|   |   |   |   
+==============================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/*===========================================
+|   |   |   COMMON CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   NAVBAR CSS START|   |   |   |   
+==============================================*/
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .nav-content {
+  background-color: #d9d9d9;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .nav-content .navbar-brand {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .nav-content .navbar-nav .nav-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all linear 0.3s;
+  position: relative;
+}
+.navbar .nav-content .navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+.navbar .nav-content .navbar-nav .nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+.navbar .nav-content .navbar-nav .nav-item:last-child {
+  padding-right: 0;
+}
+.navbar .nav-content .navbar-nav .nav-item:hover {
+  background-color: #000;
+}
+.navbar .nav-content .navbar-nav .nav-item:hover::after {
+  opacity: 1;
+}
+.navbar .nav-content .navbar-nav .nav-item:hover::before {
+  opacity: 1;
+}
+.navbar .nav-content .navbar-nav .nav-item:hover .nav-link {
+  color: #fff;
+}
+.navbar .nav-content .navbar-nav .nav-item .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+.navbar .bars {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  position: relative;
+  right: 15px;
+  top: 0;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 99999;
+}
+.navbar .bars .bar-line {
+  display: inline-block;
+  height: 4px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: #000;
+  margin: 4px 0;
+  transition: all linear 0.3s;
+}
+.navbar .bars .line-one.close-line1 {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: 3px;
+  width: 45px;
+}
+.navbar .bars .line-two.close-line2 {
+  opacity: 0;
+}
+.navbar .bars .line-three.close-line3 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 17px;
+  left: 3px;
+  width: 45px;
+}
+.navbar #mobile-menu {
+  position: absolute;
+  top: 0;
+  left: -120%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d9d9d9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+.navbar #mobile-menu .nav-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar #mobile-menu.slide-menu {
+  left: 0;
+}
+
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d9d9d9;
+  -webkit-animation: sticky 1s linear;
+          animation: sticky 1s linear;
+  z-index: 999;
+}
+
+@-webkit-keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/*===========================================
+|   |   |   NAVBAR CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   BANNER CSS START|   |   |   |   
+==============================================*/
+#banner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#banner .banner-left h1 {
+  font-family: "Libre Baskerville";
+  font-size: 70px;
+  font-weight: 700;
+  color: #744AAC;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+#banner .banner-left h3 {
+  font-family: "Roboto";
+  font-size: 46px;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+#banner .banner-left .banner-left-item {
+  padding-bottom: 40px;
+}
+#banner .banner-left .banner-left-item .banner-left-number {
+  margin-right: 80px;
+}
+#banner .banner-left .banner-left-item .banner-left-number h4 {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #DC2E3D;
+}
+#banner .banner-left .banner-left-item .banner-left-content p {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  line-height: 35px;
+}
+#banner .banner-left .banner-left-item .banner-left-content p span {
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  text-transform: capitalize;
+}
+#banner .banner-left .banner-left-link a {
+  display: inline-block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 44px;
+  padding-right: 44px;
+  border-radius: 8px;
+  background-color: #AC4A97;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/*===========================================
+|   |   |   BANNER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+#service {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#service .service-head {
+  padding-bottom: 140px;
+}
+#service .service-head h2 {
+  font-family: "Libre Baskerville";
+  font-size: 48px;
+  font-weight: 700;
+  color: #4A4141;
+  text-transform: capitalize;
+  position: relative;
+}
+#service .service-head h2::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #DC2E3D;
+}
+#service .service-item {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 30px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #000;
+  margin-bottom: 40px;
+  height: 600px;
+  position: relative;
+}
+#service .service-item .service-top {
+  padding-bottom: 45px;
+}
+#service .service-item .service-top .service-top-text h4 {
+  font-family: "Roboto";
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  text-transform: capitalize;
+  line-height: 35px;
+}
+#service .service-item .service-middle {
+  padding-bottom: 70px;
+}
+#service .service-item .service-middle .service-middle-text p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+}
+#service .service-item .service-bottom {
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+}
+#service .service-item .service-bottom a {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #744AAC;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   FEATURE CSS START|   |   |   |   
+==============================================*/
+#features .feature-container {
+  background-color: #B4A4A4;
+  border-radius: 5px 5px 0 0;
+}
+#features .feature-container .feature-head h2 {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #4A4141;
+  padding-top: 40px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+#features .feature-container .feature-head h2::after {
+  position: absolute;
+  content: "";
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 3px;
+  background-color: #DC2E3D;
+}
+#features .feature-container .featute-item-head {
+  padding-top: 105px;
+  padding-bottom: 530px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#features .feature-container .featute-item-head a {
+  display: inline-block;
+  height: 56px;
+  width: 105px;
+  background-color: #d9d9d9;
+  line-height: 56px;
+  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+}
+
+/*===========================================
+|   |   |   FEATURE CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   FOOTER CSS START|   |   |   |   
+==============================================*/
+#footer .footer-container {
+  background-color: #3A3333;
+  position: relative;
+}
+#footer .footer-container::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 135px;
+  width: 100%;
+  height: 2px;
+  background-color: #E7D3D3;
+}
+#footer .footer-container .footer-header {
+  padding-bottom: 60px;
+}
+#footer .footer-container .footer-clm {
+  margin-top: 55px;
+  margin-bottom: 35px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+#footer .footer-container .footer-clm::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #E7D3D3;
+}
+#footer .footer-container .footer-clm:last-child::after {
+  display: none;
+}
+#footer .footer-container .footer-clm .footer-item {
+  padding-top: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+#footer .footer-container .footer-clm .footer-item .footer-icon {
+  height: 60px;
+  width: 60px;
+  background-color: #FFD43B;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+#footer .footer-container .footer-clm .footer-item .footer-icon svg {
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+}
+#footer .footer-container .footer-clm .footer-item p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 27px;
+}
+#footer .footer-container .social-link-head h4 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 25px;
+}
+#footer .footer-container .social-link {
+  margin-bottom: 30px;
+}
+#footer .footer-container .social-link a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+  line-height: 40px;
+}
+#footer .footer-container .social-link a svg {
+  color: #000;
+  font-size: 16px;
+}
+
+/*===========================================
+|   |   |   FOOTER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   COPYRIGHT CSS START|   |   |   |   
+==============================================*/
+#copyright .copy-container {
+  background-color: #231F1F;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#copyright .copy-container .copy-item p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+#copyright .copy-container .copy-item p span {
+  color: #F05340;
+}
+
+/*===========================================
+|   |   |   COPYRIGHT CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   BACK TO TOP CSS START|   |   |   |   
+==============================================*/
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  height: 40px;
+  width: 40px;
+  background-color: #744AAC;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99999;
+  display: none;
+  transition: all linear 0.3s;
+  -webkit-animation: btp 1s linear;
+          animation: btp 1s linear;
+}
+.back-to-top svg {
+  font-size: 20px;
+  color: #fff;
+}
+.back-to-top:hover {
+  background-color: #AC4A97;
+  transform: scale(1.2);
+}
+@-webkit-keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+@keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/*===========================================
+|   |   |   BACK TO TOP CSS START|   |   |   |   
+==============================================*//*# sourceMappingURL=style.css.map */

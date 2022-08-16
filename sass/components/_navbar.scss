@@ -1,0 +1,169 @@
+/*===========================================
+|   |   |   NAVBAR CSS START|   |   |   |   
+==============================================*/
+.navbar {
+    @include pgap(0, 0, 0, 0);
+
+    .nav-content {
+        background-color: $navbg;
+        @include pgap(0, 0, 0, 0);
+
+        .navbar-brand {
+            @include pgap(30px, 30px, 0, 0);
+        }
+
+        .navbar-nav {
+            .nav-item {
+                @include pgap(10px, 10px, 20px, 20px);
+                transition: all linear .3s;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -6px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $navhoverbg;
+                    opacity: 0;
+                    transition: all linear .3s;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -6px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $navhoverbg;
+                    opacity: 0;
+                    transition: all linear .3s;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &:hover {
+                    background-color: $navhoverbg;
+
+                    &::after {
+                        opacity: 1;
+                    }
+
+                    &::before {
+                        opacity: 1;
+                    }
+
+                    .nav-link {
+                        color: $normal;
+                    }
+
+                }
+
+                .nav-link {
+                    @include pgap(0, 0, 0, 0);
+                    @include font('Open Sans', 16px, 400, $nav);
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+                }
+            }
+        }
+
+    }
+
+    // custom menu bar start
+    .bars {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        position: relative;
+        right: 15px;
+        top: 0;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 99999;
+
+        .bar-line {
+            display: inline-block;
+            height: 4px;
+            width: 40px;
+            border-radius: 5px;
+            background-color: #000;
+            margin: 4px 0;
+            transition: all linear .3s;
+        }
+
+        .line-one.close-line1 {
+            transform: rotate(45deg);
+            position: absolute;
+            top: 17px;
+            left: 3px;
+            width: 45px;
+        }
+
+        .line-two.close-line2 {
+            opacity: 0;
+        }
+
+        .line-three.close-line3 {
+            transform: rotate(-45deg);
+            position: absolute;
+            bottom: 17px;
+            left: 3px;
+            width: 45px;
+        }
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 0;
+        left: -120%;
+        height: 100vh;
+        width: 100vw;
+        background-color: $navbg;
+        @include pgap(50px, 50px, 50px, 50px);
+        text-align: center;
+        transition: all linear .3s;
+
+        .nav-item {
+            @include pgap(5px, 5px, 0, 0);
+        }
+    }
+
+    #mobile-menu.slide-menu {
+        left: 0;
+    }
+
+    // custom menu bar end
+    
+}
+
+//  sticky menu css start 
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $navbg;
+    animation: sticky 1s linear;
+    z-index: 999;
+}
+
+@keyframes sticky {
+    0% {
+        top: -50px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+// sticky menu css end 
+/*===========================================
+|   |   |   NAVBAR CSS END|   |   |   |   
+==============================================*/

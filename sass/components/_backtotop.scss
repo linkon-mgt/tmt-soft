@@ -1,0 +1,46 @@
+/*===========================================
+|   |   |   BACK TO TOP CSS START|   |   |   |   
+==============================================*/
+    .back-to-top {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        height: 40px;
+        width: 40px;
+        background-color:$servicebtn;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 99999;
+        display: none;
+        transition: all linear 0.3s;
+        animation: btp 1s linear;
+        svg{
+            font-size: 20px;
+            color: #fff;
+        }
+        &:hover{
+            background-color: $bannerbg;
+            transform: scale(1.2);
+        }
+        @keyframes btp {
+            0% {
+                bottom: 85%;
+                right: 15px;
+            }
+        
+            100% {
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+   
+    
+  /*===========================================
+|   |   |   BACK TO TOP CSS START|   |   |   |   
+==============================================*/
+
+
+
