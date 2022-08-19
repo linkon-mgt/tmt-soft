@@ -1,0 +1,18 @@
+/*===========================================
+|   |   |   ABOUT BANNER CSS START|   |   |   |   
+==============================================*/
+#about-banner{
+    background: url(../images/about-banner.jpg) no-repeat center/cover;
+    padding: 335px 0;
+    .about-banner-content{
+        h4{
+            @include font('Libre Baskerville', 42px, 700, $aboutbanner);
+            text-transform: capitalize;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 2px 6px rgba(244, 10, 195, 0.9);
+            letter-spacing: 5px;
+        }
+    }
+}
+/*===========================================
+|   |   |   ABOUT BANNER CSS START|   |   |   |   
+==============================================*/

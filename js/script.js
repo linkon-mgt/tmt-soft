@@ -1,5 +1,5 @@
-$(function(){
-     //back to to button animation
+$(function () {
+  //back to to button animation
   $(window).scroll(function () {
     var sticky = $(this).scrollTop()
     if (sticky > 50) {
@@ -20,15 +20,22 @@ $(function(){
 
   $(window).scroll(function () {
     // sticky menu start
-    //this is for sticky menu
     var sticky = $(this).scrollTop()
     if (sticky > 50) {
       $(".mobile-menu").addClass("sticky-menu")
     } else {
       $(".mobile-menu").removeClass("sticky-menu")
     }
-  })
     // sticky menu end
+  })
+  
+  // counter up start
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
+  // counter up end
+
 })
 
 // custom mobile menu start

@@ -44,7 +44,6 @@ body {
   padding-right: 0;
 }
 .navbar .nav-content {
-  background-color: #d9d9d9;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
@@ -52,7 +51,7 @@ body {
 }
 .navbar .nav-content .navbar-brand {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -587,4 +586,142 @@ body {
 
 /*===========================================
 |   |   |   BACK TO TOP CSS START|   |   |   |   
+==============================================*/
+#page-link-up {
+  background-color: #d9d9d9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#page-link-up .page-linkup {
+  margin-left: 20px;
+}
+#page-link-up .page-linkup span {
+  padding-right: 5px;
+}
+#page-link-up .page-linkup span svg {
+  color: #231F1F;
+  font-size: 16px;
+  font-weight: 300;
+}
+#page-link-up .page-linkup a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  padding-right: 5px;
+}
+
+/*===========================================
+|   |   |   ABOUT BANNER CSS START|   |   |   |   
+==============================================*/
+#about-banner {
+  background: url(../images/about-banner.jpg) no-repeat center/cover;
+  padding: 335px 0;
+}
+#about-banner .about-banner-content h4 {
+  font-family: "Libre Baskerville";
+  font-size: 42px;
+  font-weight: 700;
+  color: #FD720D;
+  text-transform: capitalize;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 2px 6px rgba(244, 10, 195, 0.9);
+  letter-spacing: 5px;
+}
+
+/*===========================================
+|   |   |   ABOUT BANNER CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   ABOUT COMPANY CSS START|   |   |   |   
+==============================================*/
+#about-company {
+  padding-top: 155px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#about-company .about-company-right {
+  padding-top: 30px;
+  margin-left: 30px;
+}
+#about-company .about-company-right h3 {
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+#about-company .about-company-right h2 {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  padding-bottom: 60px;
+  line-height: 38px;
+  position: relative;
+}
+#about-company .about-company-right h2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 30px;
+  height: 3px;
+  width: 200px;
+  background-color: #DC2E3D;
+}
+#about-company .about-company-right p {
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  line-height: 26px;
+}
+
+/*===========================================
+|   |   |   ABOUT COMPANY CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   ABOUT COUNTER CSS START|   |   |   |   
+==============================================*/
+#about-counter {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#about-counter .about-counter-head h2 {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 800;
+  color: #382538;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+#about-counter .about-counter-col {
+  border-left: 2px solid #B4A4A4;
+}
+#about-counter .about-counter-col:first-child {
+  border-left: none;
+}
+#about-counter .about-counter-col .about-counter-item h3 {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #9E5B07;
+  padding: 30px 0;
+}
+#about-counter .about-counter-col .about-counter-item p {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  padding-bottom: 60px;
+}
+
+/*===========================================
+|   |   |   ABOUT COUNTER CSS START|   |   |   |   
 ==============================================*//*# sourceMappingURL=style.css.map */

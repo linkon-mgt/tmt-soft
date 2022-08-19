@@ -1,0 +1,221 @@
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR HOME PAGE START| |   |   |   |
+*************************************************************** */
+
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media(min-width:992px) and (max-width:1199.99px) {
+
+    /* about banner part start */
+    #about-banner {
+        padding: 300px 0;
+    }
+
+    /* about banner part end */
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media(min-width:768px) and (max-width:991.99px) {
+
+    /* about banner part start */
+    #about-banner {
+        padding: 300px 0;
+    }
+
+    /* about banner part end */
+
+    /* about company part end */
+    #about-company {
+        padding-top: 130px;
+        padding-bottom: 90px;
+    }
+
+    #about-company .about-company-right h3 {
+        text-align: center;
+    }
+
+    #about-company .about-company-right h2::after {
+        display: none;
+    }
+
+    #about-company .about-company-right p {
+        font-size: 16px;
+    }
+
+    /* about company part end */
+
+    /* about counter part end */
+    #about-counter {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    #about-counter .about-counter-head h2 {
+        text-align: center;
+    }
+
+    #about-counter .about-counter-col {
+        border-left: none;
+    }
+
+    /* about counter part end */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media(min-width:576px) and (max-width:767.99px) {
+
+    /* about banner part start */
+    #about-banner {
+        padding: 200px 0;
+    }
+
+    /* about banner part end */
+
+    /* about company part end */
+    #about-company {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    #about-company .about-company-right h3 {
+        text-align: center;
+    }
+
+    #about-company .about-company-right h2::after {
+        display: none;
+    }
+
+    #about-company .about-company-right p {
+        font-size: 16px;
+    }
+
+    /* about company part end */
+
+    /* about counter part end */
+    #about-counter {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    #about-counter .about-counter-head h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #about-counter .about-counter-col {
+        border-left: none;
+    }
+
+    /* about counter part end */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media(max-width:575.99px) {
+
+    /* about banner part start */
+    #about-banner {
+        padding: 150px 0;
+    }
+
+    #about-banner .about-banner-content h4 {
+        font-size: 36px;
+    }
+
+    /* about banner part end */
+
+    /* about company part end */
+    #about-company {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    #about-company .about-company-right h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #about-company .about-company-right h2::after {
+        display: none;
+    }
+
+    #about-company .about-company-right h2 {
+        font-size: 27px;
+        padding-bottom: 40px;
+    }
+
+    #about-company .about-company-right p {
+        font-size: 13px;
+    }
+
+    /* about company part end */
+
+    /* about counter part end */
+    #about-counter {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    #about-counter .about-counter-head h2 {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    #about-counter .about-counter-col {
+        border-left: none;
+    }
+
+    /* about counter part end */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR ABOUT PAGE END| |   |   |   |
+    *************************************************************** */

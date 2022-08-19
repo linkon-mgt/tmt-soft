@@ -6,75 +6,86 @@
 /*===================================================================
 |   |   |   |   responsive for large device start| |   |   |   |
 =====================================================================*/
-@media(min-width:992px) and (max-width:1199.99px){
-/* navbar part start */
-.navbar .nav-content .navbar-brand {
- padding: 20px 0;
-}
-/* navbar part end */
+@media(min-width:992px) and (max-width:1199.99px) {
+
+    /* navbar part start */
+    .navbar .nav-content .navbar-brand {
+        padding: 20px 0;
+    }
+
+    /* navbar part end */
 
 
- /* banner part start */
- #banner .banner-left h3 {
-	font-size: 43px;
-}
-#banner .banner-left .banner-left-item .banner-left-content p {
-	font-size: 18px;
-}
-#banner .banner-left .banner-left-item .banner-left-content p span {
-	font-size: 18px;
-}
-/* banner part end */
+    /* banner part start */
+    #banner .banner-left h3 {
+        font-size: 43px;
+    }
+
+    #banner .banner-left .banner-left-item .banner-left-content p {
+        font-size: 18px;
+    }
+
+    #banner .banner-left .banner-left-item .banner-left-content p span {
+        font-size: 18px;
+    }
+
+    /* banner part end */
 
 
-/* service part start */
+    /* service part start */
 
 
-#service .service-head {
-    padding-bottom: 120px;
-}
-#service .service-item .service-top .service-top-text h4 {
-    font-size: 22px;
-}
-#service .service-item {
-    height: 550px;
-}
+    #service .service-head {
+        padding-bottom: 120px;
+    }
 
-/* service part end */
+    #service .service-item .service-top .service-top-text h4 {
+        font-size: 22px;
+    }
 
+    #service .service-item {
+        height: 550px;
+    }
 
- /* features part start*/
-
-#features .feature-container .feature-head h2 {
-    font-size: 30px;
-}
-#features .feature-container .featute-item-head {
-    padding-top: 40px;
-}
-#features .feature-container .featute-item-head a {
-    height: 45px;
-    width: 90px;
-    line-height: 45px;
-    margin-bottom: 15px;
-}
-/* features part end */
+    /* service part end */
 
 
-/* footer part start */
+    /* features part start*/
+
+    #features .feature-container .feature-head h2 {
+        font-size: 30px;
+    }
+
+    #features .feature-container .featute-item-head {
+        padding-top: 40px;
+    }
+
+    #features .feature-container .featute-item-head a {
+        height: 45px;
+        width: 90px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    }
+
+    /* features part end */
 
 
-#footer .footer-container .footer-clm .footer-item .footer-icon {
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    margin-bottom: 40px;
-}
-/* footer part end */
-html,
-body {
-    overflow-x: hidden;
-}
+    /* footer part start */
+
+
+    #footer .footer-container .footer-clm .footer-item .footer-icon {
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    /* footer part end */
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
 
 }
@@ -87,58 +98,71 @@ body {
 /*===================================================================
 |   |   |   |   responsive for medium device start| |   |   |   |
 =====================================================================*/
-@media(min-width:768px) and (max-width:991.99px){
-     /* navbar part start */
-     .navbar #mobile-menu {
+@media(min-width:768px) and (max-width:991.99px) {
+
+    /* navbar part start */
+    .navbar #mobile-menu {
         left: -150%;
         padding-top: 85px;
         width: 70vw;
     }
+
     .navbar .nav-content .navbar-brand {
-     padding: 20px 0;
+        padding: 20px 0;
     }
+
     .navbar .nav-content .navbar-nav .nav-item::after {
-      display: none;
+        display: none;
     }
+
     .navbar .nav-content .navbar-nav .nav-item::before {
-      display: none;
+        display: none;
     }
+
     /* navbar part end */
 
 
-     /* banner part start */
-     #banner {
+    /* banner part start */
+    #banner {
         padding-top: 100px;
         padding-bottom: 50px;
     }
+
     #banner .banner-left .banner-left-item .banner-left-number {
         margin-left: 50px;
         margin-right: 30px;
     }
-    #banner .banner-left .banner-left-link{
+
+    #banner .banner-left .banner-left-link {
         display: flex;
         justify-content: center;
     }
+
     /* banner part end */
 
 
-     /* service part start */
-     #service {
+    /* service part start */
+    #service {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     #service .service-head h2 {
         font-size: 35px;
     }
+
     #service .service-head {
         padding-bottom: 80px;
     }
+
     #service .service-item .service-top .service-top-text h4 {
         font-size: 16px;
     }
+
     #service .service-item {
         height: 500px;
     }
+
     #service .service-item .service-bottom a {
         padding-top: 16px;
         padding-bottom: 16px;
@@ -146,23 +170,27 @@ body {
         padding-right: 30px;
         font-size: 14px;
     }
+
     /* service part end */
 
 
-     /* features part start*/
-    
+    /* features part start*/
+
     #features .feature-container .feature-head h2 {
         font-size: 26px;
     }
+
     #features .feature-container .featute-item-head {
         padding-top: 40px;
     }
+
     #features .feature-container .featute-item-head a {
         height: 45px;
         width: 90px;
         line-height: 45px;
         margin-bottom: 15px;
     }
+
     /* features part end */
 
 
@@ -170,16 +198,20 @@ body {
     #footer .footer-container::after {
         top: 110px;
     }
+
     #footer .footer-container .footer-header {
         padding-bottom: 40px;
     }
+
     #footer .footer-container .footer-clm::after {
-      display: none;
+        display: none;
     }
+
     #footer .footer-container .footer-clm .footer-item {
         padding-top: 15px;
         margin-bottom: 20px;
     }
+
     #footer .footer-container .footer-clm .footer-item .footer-icon {
         height: 50px;
         width: 50px;
@@ -187,23 +219,45 @@ body {
         line-height: 50px;
         margin-bottom: 40px;
     }
+
     #footer .footer-container .footer-clm {
         margin-top: 0;
         margin-bottom: 0;
     }
+
     #footer .footer-container .social-link a {
         margin-bottom: 20px;
     }
+
     #footer .footer-container .footer-clm .footer-item p {
         font-size: 13px;
     }
+
     /* footer part end */
+
+    /* page link up part start */
+    #page-link-up .page-linkup {
+        margin-left: 10px;
+    }
+
+    #page-link-up .page-linkup a {
+        font-size: 15px;
+    }
+
+    #page-link-up {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* page link up part start */
+
     html,
-body {
-    overflow-x: hidden;
-}
+    body {
+        overflow-x: hidden;
+    }
 
 }
+
 /*===================================================================
 |   |   |   |   responsive for medium device end| |   |   |   |
 =====================================================================*/
@@ -213,176 +267,35 @@ body {
 /*===================================================================
 |   |   |   |   responsive for small device start| |   |   |   |
 =====================================================================*/
-@media(min-width:576px) and (max-width:767.99px){
-     /* navbar part start */
+@media(min-width:576px) and (max-width:767.99px) {
+
+    /* navbar part start */
     .navbar #mobile-menu {
         left: -150%;
         padding-top: 85px;
         width: 70vw;
     }
+
     .navbar .bars {
         transform: scale(.9);
     }
+
     .navbar .nav-content .navbar-brand img {
-       transform: scale(.8);
+        transform: scale(.8);
     }
+
     .navbar .nav-content .navbar-brand {
-     padding: 15px 0;
+        padding: 15px 0;
     }
+
     .navbar .nav-content .navbar-nav .nav-item::after {
-      display: none;
-    }
-    .navbar .nav-content .navbar-nav .nav-item::before {
-      display: none;
-    }
-    /* navbar part end */
-
-
-     /* banner part start */
-     #banner {
-        padding-top: 100px;
-        padding-bottom: 50px;
-    }
-    #banner .banner-left h1 {
-        font-size: 60px;
-        padding-bottom: 25px;
-    }
-    #banner .banner-left h3 {
-        font-size: 35px;
-        padding-bottom: 25px;
-    }
-    #banner .banner-left .banner-left-item .banner-left-number {
-        margin-right: 50px;
-    }
-    #banner .banner-left .banner-left-item .banner-left-content p {
-        font-size: 20px;
-    }
-    #banner .banner-left .banner-left-item .banner-left-content p span {
-        font-size: 17px;
-    }
-    #banner .banner-left .banner-left-link{
-        display: flex;
-        justify-content: center;
-    }
-    /* banner part end */
-
-
-    /* service part start */
-    #service {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    #service .service-head h2 {
-        font-size: 35px;
-    }
-    #service .service-head {
-        padding-bottom: 80px;
-    }
-    #service .service-item .service-top .service-top-text h4 {
-        font-size: 16px;
-    }
-    #service .service-item {
-        height: 500px;
-    }
-    #service .service-item .service-bottom a {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 14px;
-    }
-    /* service part end */
-
-
-     /* features part start*/
-     #features .feature-container .feature-head h2::after {
         display: none;
     }
-    #features .feature-container .feature-head h2 {
-        font-size: 26px;
-    }
-    #features .feature-container .featute-item-head {
-        padding-top: 40px;
-    }
-    #features .feature-container .featute-item-head a {
-        height: 45px;
-        width: 90px;
-        line-height: 45px;
-        margin-bottom: 15px;
-    }
-    /* features part end */
 
-
-    /* footer part start */
-    #footer .footer-container::after {
-        top: 110px;
-    }
-    #footer .footer-container .footer-header {
-        padding-bottom: 40px;
-    }
-    #footer .footer-container .footer-clm::after {
-      display: none;
-    }
-    #footer .footer-container .footer-clm .footer-item {
-        padding-top: 15px;
-        margin-bottom: 20px;
-    }
-    #footer .footer-container .footer-clm .footer-item .footer-icon {
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        line-height: 50px;
-        margin-bottom: 40px;
-    }
-    #footer .footer-container .footer-clm {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    #footer .footer-container .social-link a {
-        margin-bottom: 20px;
-    }
-    #footer .footer-container .footer-clm .footer-item p {
-        font-size: 16px;
-    }
-    /* footer part end */
-    html,
-body {
-    overflow-x: hidden;
-}
-
-}
-/*===================================================================
-|   |   |   |   responsive for small device end| |   |   |   |
-=====================================================================*/
-
-
-/*===================================================================
-|   |   |   |   responsive for xtra small device start| |   |   |   |
-=====================================================================*/
-@media(max-width:575.99px){
-    /* navbar part start */
-    .sticky-menu {
-        left:0;
-    }
-    .navbar #mobile-menu {
-        left: -150%;
-        padding-top: 85px;
-    }
-    .navbar .bars {
-        transform: scale(.9);
-    }
-    .navbar .nav-content .navbar-brand img {
-       transform: scale(.7);
-    }
-    .navbar .nav-content .navbar-brand {
-     padding: 10px 0;
-    }
-    .navbar .nav-content .navbar-nav .nav-item::after {
-      display: none;
-    }
     .navbar .nav-content .navbar-nav .nav-item::before {
-      display: none;
+        display: none;
     }
+
     /* navbar part end */
 
 
@@ -391,41 +304,34 @@ body {
         padding-top: 100px;
         padding-bottom: 50px;
     }
+
     #banner .banner-left h1 {
-        font-size: 50px;
-        padding-bottom: 15px;
+        font-size: 60px;
+        padding-bottom: 25px;
     }
+
     #banner .banner-left h3 {
-        font-size: 27px;
-        padding-bottom: 15px;
+        font-size: 35px;
+        padding-bottom: 25px;
     }
-    #banner .banner-left .banner-left-item {
-        padding-bottom: 30px;
-    }
+
     #banner .banner-left .banner-left-item .banner-left-number {
-        margin-right: 30px;
+        margin-right: 50px;
     }
-    #banner .banner-left .banner-left-item .banner-left-number h4 {
-        font-size: 22px;
-    }
+
     #banner .banner-left .banner-left-item .banner-left-content p {
-        font-size: 16px;
+        font-size: 20px;
     }
+
     #banner .banner-left .banner-left-item .banner-left-content p span {
-        font-size: 13px;
+        font-size: 17px;
     }
-    #banner .banner-left .banner-left-link{
+
+    #banner .banner-left .banner-left-link {
         display: flex;
         justify-content: center;
     }
-    #banner .banner-left .banner-left-link a {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 32px;
-        padding-right: 32px;
-        font-size: 14px;
-        
-    }
+
     /* banner part end */
 
 
@@ -434,18 +340,23 @@ body {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     #service .service-head h2 {
-        font-size: 28px;
+        font-size: 35px;
     }
+
     #service .service-head {
         padding-bottom: 80px;
     }
+
     #service .service-item .service-top .service-top-text h4 {
-        font-size: 22px;
+        font-size: 16px;
     }
+
     #service .service-item {
         height: 500px;
     }
+
     #service .service-item .service-bottom a {
         padding-top: 16px;
         padding-bottom: 16px;
@@ -453,6 +364,223 @@ body {
         padding-right: 30px;
         font-size: 14px;
     }
+
+    /* service part end */
+
+
+    /* features part start*/
+    #features .feature-container .feature-head h2::after {
+        display: none;
+    }
+
+    #features .feature-container .feature-head h2 {
+        font-size: 26px;
+    }
+
+    #features .feature-container .featute-item-head {
+        padding-top: 40px;
+    }
+
+    #features .feature-container .featute-item-head a {
+        height: 45px;
+        width: 90px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    }
+
+    /* features part end */
+
+
+    /* footer part start */
+    #footer .footer-container::after {
+        top: 110px;
+    }
+
+    #footer .footer-container .footer-header {
+        padding-bottom: 40px;
+    }
+
+    #footer .footer-container .footer-clm::after {
+        display: none;
+    }
+
+    #footer .footer-container .footer-clm .footer-item {
+        padding-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    #footer .footer-container .footer-clm .footer-item .footer-icon {
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    #footer .footer-container .footer-clm {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #footer .footer-container .social-link a {
+        margin-bottom: 20px;
+    }
+
+    #footer .footer-container .footer-clm .footer-item p {
+        font-size: 16px;
+    }
+
+    /* footer part end */
+
+    /* page link up part start */
+    #page-link-up .page-linkup {
+        margin-left: 8px;
+    }
+
+    #page-link-up .page-linkup a {
+        font-size: 14px;
+    }
+
+    #page-link-up {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    /* page link up part start */
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+/*===================================================================
+|   |   |   |   responsive for small device end| |   |   |   |
+=====================================================================*/
+
+
+/*===================================================================
+|   |   |   |   responsive for xtra small device start| |   |   |   |
+=====================================================================*/
+@media(max-width:575.99px) {
+
+    /* navbar part start */
+    .sticky-menu {
+        left: 0;
+    }
+
+    .navbar #mobile-menu {
+        left: -150%;
+        padding-top: 85px;
+    }
+
+    .navbar .bars {
+        transform: scale(.9);
+    }
+
+    .navbar .nav-content .navbar-brand img {
+        transform: scale(.7);
+    }
+
+    .navbar .nav-content .navbar-brand {
+        padding: 10px 0;
+    }
+
+    .navbar .nav-content .navbar-nav .nav-item::after {
+        display: none;
+    }
+
+    .navbar .nav-content .navbar-nav .nav-item::before {
+        display: none;
+    }
+
+    /* navbar part end */
+
+
+    /* banner part start */
+    #banner {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    #banner .banner-left h1 {
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+
+    #banner .banner-left h3 {
+        font-size: 27px;
+        padding-bottom: 15px;
+    }
+
+    #banner .banner-left .banner-left-item {
+        padding-bottom: 30px;
+    }
+
+    #banner .banner-left .banner-left-item .banner-left-number {
+        margin-right: 30px;
+    }
+
+    #banner .banner-left .banner-left-item .banner-left-number h4 {
+        font-size: 22px;
+    }
+
+    #banner .banner-left .banner-left-item .banner-left-content p {
+        font-size: 16px;
+    }
+
+    #banner .banner-left .banner-left-item .banner-left-content p span {
+        font-size: 13px;
+    }
+
+    #banner .banner-left .banner-left-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    #banner .banner-left .banner-left-link a {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-size: 14px;
+
+    }
+
+    /* banner part end */
+
+
+    /* service part start */
+    #service {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #service .service-head h2 {
+        font-size: 28px;
+    }
+
+    #service .service-head {
+        padding-bottom: 80px;
+    }
+
+    #service .service-item .service-top .service-top-text h4 {
+        font-size: 22px;
+    }
+
+    #service .service-item {
+        height: 500px;
+    }
+
+    #service .service-item .service-bottom a {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14px;
+    }
+
     /* service part end */
 
 
@@ -461,19 +589,23 @@ body {
     #features .feature-container .feature-head h2::after {
         display: none;
     }
+
     #features .feature-container .feature-head h2 {
         font-size: 22px;
         line-height: 33px;
     }
+
     #features .feature-container .featute-item-head {
         padding-top: 70px;
     }
+
     #features .feature-container .featute-item-head a {
         height: 45px;
         width: 90px;
         line-height: 45px;
         margin-bottom: 15px;
     }
+
     /* features part end */
 
 
@@ -481,16 +613,20 @@ body {
     #footer .footer-container::after {
         top: 110px;
     }
+
     #footer .footer-container .footer-header {
         padding-bottom: 40px;
     }
+
     #footer .footer-container .footer-clm::after {
-      display: none;
+        display: none;
     }
+
     #footer .footer-container .footer-clm .footer-item {
         padding-top: 15px;
         margin-bottom: 20px;
     }
+
     #footer .footer-container .footer-clm .footer-item .footer-icon {
         height: 50px;
         width: 50px;
@@ -498,16 +634,20 @@ body {
         line-height: 50px;
         margin-bottom: 40px;
     }
+
     #footer .footer-container .footer-clm {
         margin-top: 0;
         margin-bottom: 0;
     }
+
     #footer .footer-container .social-link a {
         margin-bottom: 20px;
     }
+
     #footer .footer-container .footer-clm .footer-item p {
         font-size: 16px;
     }
+
     /* footer part end */
 
 
@@ -515,23 +655,45 @@ body {
     #copyright .copy-container .copy-item p {
         font-size: 13px;
     }
+
     /* copyright part end */
+
+    /* page link up part start */
+    #page-link-up .page-linkup {
+        margin-left: 5px;
+    }
+
+    #page-link-up .page-linkup a {
+        font-size: 13px;
+    }
+
+    #page-link-up {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    /* page link up part start */
+
+
     html,
-body {
-    overflow-x: hidden;
-}
+    body {
+        overflow-x: hidden;
+    }
 
 }
-@media (min-width:420px) and (max-width:575px){
+
+@media (min-width:420px) and (max-width:575px) {
     .navbar #mobile-menu {
-       width: 70vw;
+        width: 70vw;
     }
+
     #service .service-item {
         width: 85%;
         margin: 20px auto;
         height: 600px;
     }
 }
+
 /*====================================================================
 |   |   |   |   responsive for xtra small device end| |   |   |   |
 ======================================================================*/

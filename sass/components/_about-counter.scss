@@ -1,0 +1,33 @@
+/*===========================================
+|   |   |   ABOUT COUNTER CSS START|   |   |   |   
+==============================================*/
+#about-counter{
+    @include pgap(100px,150px,0,0);
+    .about-counter-head{
+        h2{
+            @include font('Roboto', 36px, 800, #382538);
+            padding-bottom: 50px;
+            padding-left: 20px;
+        }
+    }
+    .about-counter-col{
+        border-left: 2px solid #B4A4A4;
+        &:first-child{
+            border-left: none;
+        }
+        .about-counter-item{
+            h3{
+                @include font('Libre Baskerville', 32px, 700, #9E5B07);
+                padding: 30px 0;
+            }
+            p{
+                @include font('Libre Baskerville', 16px, 400, #000);
+                padding-bottom: 60px; 
+            }
+        }
+    }
+    
+}
+/*===========================================
+|   |   |   ABOUT COUNTER CSS START|   |   |   |   
+==============================================*/
