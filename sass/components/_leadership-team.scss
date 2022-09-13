@@ -1,0 +1,45 @@
+/*===========================================
+|   | LEADERSHIP TEAM CSS START|   |   |   |   
+==============================================*/
+#leadership-team {
+  @include pgap(300px, 100px, 0, 0);
+  .leader-wrapper {
+    @include pgap(50px, 50px, 25px, 25px);
+    h2{
+        @include font("Roboto", 30px, 500, #3a3333);
+        text-transform: capitalize;
+        padding-bottom: 35px;
+    }
+    .leader-pic {
+      height: 315px;
+      width: 315px;
+      border-radius: 50%;
+      background-color: $navbg;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .leader-item{
+        padding-top: 50px;
+        h3{
+            @include font("Open Sans", 22px, 700, $nav);
+            padding-bottom: 20px;
+        }
+        h5{
+            @include font("Roboto", 20px, 500, $nav);
+            padding-bottom: 20px;
+        }
+        p{
+            @include font("Roboto", 16px, 400, $nav); 
+            line-height: 24px;
+            padding-right: 100px;
+        }
+    }
+  }
+}
+/*===========================================
+|   | LEADERSHIP TEAM CSS END|   |   |   |   
+==============================================*/

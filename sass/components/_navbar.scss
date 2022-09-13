@@ -2,167 +2,405 @@
 |   |   |   NAVBAR CSS START|   |   |   |   
 ==============================================*/
 .navbar {
+  @include pgap(30px, 30px, 0, 0);
+
+  .nav-content {
     @include pgap(0, 0, 0, 0);
 
-    .nav-content {
-        @include pgap(0, 0, 0, 0);
-
-        .navbar-brand {
-            @include pgap(30px, 40px, 0, 0);
-        }
-
-        .navbar-nav {
-            .nav-item {
-                @include pgap(10px, 10px, 20px, 20px);
-                transition: all linear .3s;
-                position: relative;
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: -6px;
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    background-color: $navhoverbg;
-                    opacity: 0;
-                    transition: all linear .3s;
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: -6px;
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    background-color: $navhoverbg;
-                    opacity: 0;
-                    transition: all linear .3s;
-                }
-
-                &:last-child {
-                    padding-right: 0;
-                }
-
-                &:hover {
-                    background-color: $navhoverbg;
-
-                    &::after {
-                        opacity: 1;
-                    }
-
-                    &::before {
-                        opacity: 1;
-                    }
-
-                    .nav-link {
-                        color: $normal;
-                    }
-
-                }
-
-                .nav-link {
-                    @include pgap(0, 0, 0, 0);
-                    @include font('Open Sans', 16px, 400, $nav);
-                    text-transform: capitalize;
-                    transition: all linear .3s;
-                }
-            }
-        }
-
+    .navbar-brand {
+      @include pgap(0, 0, 0, 0);
     }
 
-    // custom menu bar start
-    .bars {
-        width: 50px;
-        height: 50px;
-        border-radius: 5px;
-        border: 1px solid #000;
+    .navbar-nav {
+      .nav-item {
+        @include pgap(10px, 10px, 20px, 20px);
+        transition: all linear 0.3s;
         position: relative;
-        right: 15px;
-        top: 0;
-        flex-direction: column;
-        cursor: pointer;
-        z-index: 99999;
 
-        .bar-line {
-            display: inline-block;
-            height: 4px;
-            width: 40px;
-            border-radius: 5px;
-            background-color: #000;
-            margin: 4px 0;
-            transition: all linear .3s;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -6px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $navhoverbg;
+          opacity: 0;
+          transition: all linear 0.3s;
         }
 
-        .line-one.close-line1 {
-            transform: rotate(45deg);
-            position: absolute;
-            top: 17px;
-            left: 3px;
-            width: 45px;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -6px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $navhoverbg;
+          opacity: 0;
+          transition: all linear 0.3s;
         }
 
-        .line-two.close-line2 {
-            opacity: 0;
+        &:last-child {
+          padding-right: 0;
         }
 
-        .line-three.close-line3 {
-            transform: rotate(-45deg);
-            position: absolute;
-            bottom: 17px;
-            left: 3px;
-            width: 45px;
+        &:hover {
+          background-color: $navhoverbg;
+
+          &::after {
+            opacity: 1;
+          }
+          &::before {
+            opacity: 1;
+          }
+
+          .nav-link {
+            color: $normal;
+          }
+          .mega-menu {
+            opacity: 1;
+            visibility: visible;
+          }
+          .drop-down {
+            opacity: 1;
+            visibility: visible;
+          }
         }
+
+        .nav-link {
+          @include pgap(0, 0, 0, 0);
+          @include font("Open Sans", 16px, 400, $nav);
+          text-transform: capitalize;
+          transition: all linear 0.3s;
+          svg {
+            padding-left: 5px;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // custom menu bar start
+  .bars {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    position: relative;
+    right: 15px;
+    top: 0;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 99999;
+
+    .bar-line {
+      display: inline-block;
+      height: 4px;
+      width: 40px;
+      border-radius: 5px;
+      background-color: #000;
+      margin: 4px 0;
+      transition: all linear 0.3s;
     }
 
-    #mobile-menu {
-        position: absolute;
-        top: 0;
-        left: -120%;
-        height: 100vh;
-        width: 100vw;
-        background-color: $navbg;
-        @include pgap(50px, 50px, 50px, 50px);
-        text-align: center;
-        transition: all linear .3s;
+    .line-one.close-line1 {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 17px;
+      left: 3px;
+      width: 45px;
+    }
 
-        .nav-item {
-            @include pgap(5px, 5px, 0, 0);
+    .line-two.close-line2 {
+      opacity: 0;
+    }
+
+    .line-three.close-line3 {
+      transform: rotate(-45deg);
+      position: absolute;
+      bottom: 17px;
+      left: 3px;
+      width: 45px;
+    }
+  }
+
+  // custom menu bar end
+  // mobile menu with accoridion start
+  #mobile-menu {
+    position: absolute;
+    top: 0;
+    left: -150%;
+    height: 100vh;
+    width: 100vw;
+    background-color: $navbg;
+    @include pgap(70px, 10px, 25px, 10px);
+    text-align: center;
+    transition: all linear 0.3s;
+    z-index: 9999;
+    overflow-y: scroll;
+    .accordion {
+      .accordion-item {
+        .accordion-header {
+          .accor-button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 1.25rem;
+            @include font("Open Sans", 16px, 400, $nav);
+            text-transform: capitalize;
+            text-align: left;
+            background-color: $navbg;
+            border: 0;
+            border-radius: 0;
+            overflow-anchor: none;
+            transition: color 0.15s ease-in-out,
+              background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+              box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+
+            &:hover {
+              color: #fff;
+              background-color: #000;
+            }
+          }
+          .accor-dot {
+            position: relative;
+            &::after {
+              position: absolute;
+              content: "";
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              background-color: $bannerbg;
+              height: 7px;
+              width: 7px;
+              border-radius: 50%;
+            }
+            &:hover{
+              &::after{
+                background-color: #fff;
+              }
+             
+            }
+          }
+          .accordion-button {
+            background-color: $navbg;
+            @include font("Open Sans", 16px, 400, $nav);
+            text-transform: capitalize;
+            padding: 20px 20px;
+            transition: all linear 0.3s;
+            &:hover {
+              color: #fff;
+              background-color: #000;
+            }
+            &::after {
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>');
+              background-size: 1rem;
+              background-color: #fff;
+              height: 18px;
+              width: 18px;
+              border-radius: 50%;
+            }
+            &:not(.collapsed)::after {
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>');
+              background-size: 1rem;
+              background-color: #fff;
+              height: 18px;
+              width: 18px;
+              border-radius: 50%;
+            }
+          }
         }
+        .accordion-body {
+          background-color: $navbg;
+          padding: 10px 15px;
+          line-height: 1;
+          text-align: left;
+
+          p {
+            padding-left: 15px;
+            position: relative;
+            transition: all linear 0.3s;
+            padding: 10px;
+
+            &:hover {
+              background-color: #000;
+              a {
+                color: #fff;
+              }
+              &::after{
+                background-color: #fff;
+              }
+            }
+
+            &::after {
+              position: absolute;
+              content: "";
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              background-color: $bannerbg;
+              height: 7px;
+              width: 7px;
+              border-radius: 50%;
+            }
+
+            a {
+              @include font("Open Sans", 16px, 500, $nav);
+              text-transform: capitalize;
+              text-align: left;
+              margin-left: 15px;
+            }
+          }
+        }
+      }
     }
-
-    #mobile-menu.slide-menu {
-        left: 0;
-    }
-
-    // custom menu bar end
-
+  }
+  #mobile-menu.slide-menu {
+    left: 0;
+  }
+  // mobile menu with accoridion end
 }
 
-//  sticky menu css start 
+//  sticky menu css start
 .sticky-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $navbg;
-    animation: sticky 1s linear;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $navbg;
+  animation: sticky 1s linear;
+  padding: 25px 0;
+  z-index: 999;
 }
 
 @keyframes sticky {
-    0% {
-        top: -50px;
-    }
+  0% {
+    top: -50px;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
-// sticky menu css end 
+// sticky menu css end
+// mega menu css start
+.mega-menu {
+  width: 1140px;
+  position: absolute;
+  top: 63px;
+  left: -50px;
+  transform: translateX(-50%);
+  background-color: $navbg;
+  padding: 40px 20px;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+  z-index:999;
+  .mega-coloum {
+    border-right: 2px solid $bannerbg;
+    &:last-child {
+      border-right: none;
+    }
+    .about-company {
+      h3 {
+        @include font("Open Sans", 24px, 500, $nav);
+        line-height: 36px;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          left: 50%;
+          bottom: 0;
+          width: 70px;
+          height: 3px;
+          transform: translateX(-50%);
+          background-color: $bannerbg;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        li {
+          padding: 10px 10px 10px;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background-color: $bannerbg;
+          }
+          a {
+            @include font("Open Sans", 16px, 500, $nav);
+            line-height: 24px;
+            text-transform: capitalize;
+            transition: all linear 0.3s;
+            display: inline-block;
+            padding: 5px;
+            &:hover {
+              background-color: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// mega menu css end
+
+// drop menu css start
+.drop-down {
+  position: absolute;
+  top: 63px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $navbg;
+  width: 270px;
+  transition: all linear 0.3s;
+  padding: 40px 20px 30px;
+  opacity: 0;
+  visibility: hidden;
+  li {
+    padding: 10px 10px 10px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+      background-color: $bannerbg;
+    }
+    a {
+      @include font("Open Sans", 16px, 500, $nav);
+      line-height: 24px;
+      text-transform: capitalize;
+      transition: all linear 0.3s;
+      display: inline-block;
+      padding: 5px;
+      
+    &:hover {
+          color: #fff;
+          background-color: #000;
+      }
+    }
+  }
+}
+// drop menu css end
 /*===========================================
 |   |   |   NAVBAR CSS END|   |   |   |   
 ==============================================*/

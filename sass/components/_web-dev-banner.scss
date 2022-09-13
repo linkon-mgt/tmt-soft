@@ -1,0 +1,13 @@
+/*===========================================
+|   | WEB DEVELOPMENT BANNER CSS START|   |   |   
+==============================================*/
+#web-dev-banner{
+    background: url(../images/web-dev-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include pgap(350px,350px,0,0);
+}
+/*===========================================
+|   | WEB DEVELOPMENT BANNER CSS END|   |   |   
+==============================================*/

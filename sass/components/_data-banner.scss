@@ -1,0 +1,16 @@
+/*===========================================
+|   |DATA BANNER CSS START|   |   |   |   
+==============================================*/
+#data-banner{
+    @include pgap(100px, 100px, 0, 0);
+    .data-banner-wrapper{
+        h3{
+            padding-bottom: 30px;
+            @include font('Libre Baskerville', 40px, 700, $banner2);
+            text-transform: capitalize;
+        }
+    }
+}
+/*===========================================
+|   | DATA BANNER CSS END|   |   |   |   
+==============================================*/

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMT Soft-Ecommerce</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <!--=====================================================
+        |   |   |   |   NAVBAR PART START| |   |   |   |
+    =========================================================-->
+    <nav class="navbar navbar-expand-lg mobile-menu">
+      <div class="container nav-content">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">about<i class="fa-solid fa-angle-down"></i></a>
+                      <!-- mega menu start -->
+                      <div class="row mega-menu">
+                          <div class="col-lg-4 mega-coloum">
+                              <div class="about-company">
+                                  <h3 class="text-center">about company</h3>
+                                  <ul>
+                                      <li>
+                                          <a href="client.html">client</a>
+                                      </li>
+                                      <li>
+                                          <a href="leadership.html">leadership</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 mega-coloum">
+                              <div class="about-company">
+                                  <h3 class="text-center">approach</h3>
+                                  <ul>
+                                      <li>
+                                          <a href="#">privacy policy</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">terms of ose</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 mega-coloum">
+                              <div class="about-company">
+                                  <h3 class="text-center">join us</h3>
+                                  <ul>
+                                      <li>
+                                          <a href="team.html">join our team</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">intern</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- mega menu end -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">service<i class="fa-solid fa-angle-down"></i></a>
+                      <!-- drop down menu start -->
+                      <ul class="drop-down">
+                          <li>
+                              <a href="app-development.html">app development</a>
+                          </li>
+                          <li>
+                              <a href="#">artificial intelligence</a>
+                          </li>
+                          <li>
+                              <a href="data-analysis.html">data analysis</a>
+                          </li>
+                          <li>
+                              <a href="web-development.html">web development</a>
+                          </li>
+                          <li>
+                              <a href="ecommerce.html">ecommerce</a>
+                          </li>
+                          <li>
+                              <a href="iot.html">IOT embedded</a>
+                          </li>
+                      </ul>
+                      <!-- drop down menu end -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">research</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">contact us</a>
+                  </li>
+              </ul>
+          </div>
+           <!-- custom menu bar start -->
+    <div class="bars d-flex align-items-center justify-content-center d-block d-lg-none">
+      <div class="bar-line line-one"></div>
+      <div class="bar-line line-two"></div>
+      <div class="bar-line line-three"></div>
+    </div>
+    <!-- custom menu bar end -->
+    <!-- mobile accordion menu end -->
+    <div id="mobile-menu" class="d-block d-lg-none">
+      <div class="accordion" id="port-accordion">
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="index.html" class="accor-button collapsed">
+                            Home
+                        </a>
+                </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordion-header-one">
+              <a href="about.html" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="false" aria-controls="collapse-one">
+                       about
+                    </a>
+            </h2>
+            <div id="collapse-one" class="accordion-collapse collapse" aria-labelledby="accordion-header-one" data-bs-parent="#port-accordion">
+              <div class="accordion-body" data-hotspot="1">
+                <div class="accordion" id="country-accordion-one">
+                  <div class="accordion-item" id="accordion-item-canada">
+                    <h2 class="accordion-header" id="accordion-header-canada">
+                      <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-canada" aria-expanded="false" aria-controls="collapse-canada">about company</a>
+                    </h2>
+                    <div id="collapse-canada" class="accordion-collapse collapse" aria-labelledby="accordion-header-canada" data-bs-parent="#country-accordion-one" >
+                      <div class="accordion-body">
+                        <p><a href="client.html">clients</a></p>
+                      </div>
+                      <div class="accordion-body">
+                        <p><a href="leadership.html">leadership</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-mexico">
+                    <h2 class="accordion-header" id="accordion-header-mexico">
+                      <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mexico" aria-expanded="false" aria-controls="collapse-mexico">approach</a>
+                    </h2>
+                    <div id="collapse-mexico" class="accordion-collapse collapse" aria-labelledby="accordion-header-mexico" data-bs-parent="#country-accordion-one" >
+                      <div class="accordion-body">
+                        <p><a href="#">privacy policy</a></p>
+                      </div>
+                      <div class="accordion-body">
+                        <p><a href="#">term of use</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-united-states-of-america">
+                    <h2 class="accordion-header" id="accordion-header-united-states-of-america">
+                      <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-united-states-of-america" aria-expanded="false" aria-controls="collapse-united-states-of-america">Others Solution</a>
+                    </h2>
+                    <div id="collapse-united-states-of-america" class="accordion-collapse collapse" aria-labelledby="accordion-header-united-states-of-america" data-bs-parent="#country-accordion-one">
+                      <div class="accordion-body">
+                        <p><a href="team.html">join our team</a></p>
+                      </div>
+                      <div class="accordion-body">
+                        <p><a href="#">intern</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordion-header-two">
+              <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two" aria-expanded="true" aria-controls="collapse-two">
+                        service
+                    </a>
+            </h2>
+            <div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="accordion-header-two" data-bs-parent="#port-accordion" >
+              <div class="accordion-body" data-hotspot="2">
+                <div class="accordion" id="country-accordion-two">
+                  <div class="accordion-item" id="accordion-item-service1">
+                      <h2 class="accordion-header">
+                          <a href="app-development.html" class="accor-button accor-dot collapsed">
+                                    app development
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service2">
+                      <h2 class="accordion-header">
+                          <a href="#" class="accor-button accor-dot collapsed">
+                                    artificial intiligence
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service3">
+                      <h2 class="accordion-header">
+                          <a href="data-analysis.html" class="accor-button accor-dot collapsed">
+                                  data analysis
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service4">
+                      <h2 class="accordion-header">
+                          <a href="web-development.html" class="accor-button accor-dot collapsed">
+                                    web development
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service5">
+                      <h2 class="accordion-header">
+                          <a href="ecommerce.html" class="accor-button accor-dot collapsed">
+                                   ecommerce
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service6">
+                      <h2 class="accordion-header">
+                          <a href="iot.html" class="accor-button accor-dot collapsed">
+                                  IOT embedded
+                                </a>
+                        </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="#" class="accor-button collapsed">
+                           blog
+                        </a>
+                </h2>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="#" class="accor-button collapsed">
+                            research
+                        </a>
+                </h2>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="#" class="accor-button collapsed">
+                            Contact us
+                        </a>
+                </h2>
+          </div>
+        </div>
+     </div>
+    <!--mobile accordion  menu end -->
+      </div>
+  </nav>
+  <!--=====================================================
+      |   |   |   |   NAVBAR PART END| |   |   |   |
+  =========================================================-->
+
+  <!--=====================================================
+      |   |   |   |   PAGE LINK PART STAR| |   |   |   |
+  =========================================================-->
+  <section id="page-link-up">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="page-linkup">
+                      <a href="index.html">Home</a>
+                      <span><i class="fa-solid fa-angle-right"></i></span>
+                      <a href="#">Service</a>
+                      <span><i class="fa-solid fa-angle-right"></i></span>
+                      <a href="ecommerce.html">Ecommerce</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--=====================================================
+      |   |   |   |   PAGE LINK PART END| |   |   |   |
+  =========================================================-->
+
+
+
+    <!--=====================================================
+        |   |   |   |  ECOMMERCE BANNER PART START| |   |   |   |
+    =========================================================-->
+    <section id="ecom-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ecom-banner-left">
+              <h2 class="text-center">E-commerce Development</h2>
+              <p>E-Commerce Website Peps Up The Quotient Of Sale</p>
+              <div class="ecom-banner-line d-flex justify-content-center">
+                <img src="images/ecommerce-line.png" alt="line" class="d-none d-lg-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ecom-banner-right">
+              <img
+                src="images/ecommerce-banner.jpg"
+                alt="banner"
+                class="w-100 img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   | ECOMMERCE  BANNER PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |ECOMMERCE ABOUT PART START| |   |   |   |
+    =========================================================-->
+    <section id="ecom-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="ecom-about-content">
+              <h3>What Is E-Commerce?</h3>
+              <p>
+                It is a simple method of purchasing and selling transactions of
+                products based online over the internet. The E-Commerce website
+                is quite popular and lately becoming essential for the business.
+                If you are one of the rising entrepreneurs looking for a perfect
+                way of promoting your brand? E-Commerce is the perfect way to
+                fulfill your needs for promotions. The scale might be different
+                for everyone, but the result always turns out to be profitable.
+              </p>
+              <p>
+                E-Commerce websites transform businesses and help them to expand
+                for the growth of the company. Match your needs and preferences
+                with E-Commerce websites. All operations targeted at the
+                creation, management, and evolution of a web store are covered
+                under ecommerce website design and development. With one click,
+                the operation online can perform in E-Commerce development. The
+                UX/UI is the E-Commerce website's key factor, and large options
+                attract customers and users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   |ECOMMERCE ABOUT PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   | ECOMMERCE CONTENT PART START| |   |   |   |
+    =========================================================-->
+    <section id="ecom-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="ecom-content-text">
+              <h2>Our Expertise E-Commerce Development Solutions:</h2>
+              <div class="ecom-content-item">
+                <h3>1. Custom eCommerce Integration:</h3>
+                <p>
+                  We offer special customized E-Commerce solutions and take the
+                  E-Commerce venture to a new level. The Integration of a custom
+                  E-Commerce solution would be beneficial for the E-Commerce
+                  business.
+                </p>
+              </div>
+              <div class="ecom-content-item">
+                <h3>2. B2C Platforms</h3>
+                <p>
+                  Business to Customer business is highly in demand and one of
+                  the easiest ways of interaction. The web portal enables
+                  customers to connect directly to increase engagement and boost
+                  E-Commerce business. We provide advanced integrated E-Commerce
+                  tools to enhance productivity. An E-Commerce website is the
+                  best way for B2C platforms.
+                </p>
+              </div>
+              <div class="ecom-content-item">
+                <h3>3. B2B Commerce Solutions</h3>
+                <p>
+                  We provide rich Business to Business Commerce solutions. Our
+                  companies have expertise in creating the excellent performance
+                  of B2B E-Commerce solutions that encourage conversions and
+                  value. The avail of E-Commerce websites is to interact and
+                  transact directly and increase the creation of businesses
+                </p>
+              </div>
+              <div class="ecom-content-item">
+                <h3>4. Technology Consulting</h3>
+                <p>
+                  It is essential to know which technology is best for
+                  E-Commerce websites; Hyperlink InfoSystem provides the best
+                  technology consulting. Our technology consultants help you to
+                  find the relevant technology, platform, and all. We believe in
+                  delivering the best, and that is valuable for your project.
+                </p>
+              </div>
+              <div class="ecom-content-item">
+                <h3>5. E-Commerce App Development</h3>
+                <p>
+                  We provide seamless E-Commerce websites with our best
+                  E-Commerce app development. Our industry experts consult the
+                  best, and being no#1 app development company, and we help you
+                  build E-Commerce app development. It is a great way of
+                  expanding your online business and enhancing the website.
+                  E-Commerce app development is the simplest and easiest way for
+                  E-Commerce
+                </p>
+              </div>
+              <div class="ecom-content-item">
+                <h3>6. Payment Integration</h3>
+                <p>
+                  There is no E-Commerce website without the feature of payment
+                  integration. Our solution provides you multiple payments
+                  integrated gateways that enable secure and simple online
+                  transactions.
+                </p>
+              </div>
+              <div class="ecom-content-item">
+                <h3>7. Deploy Maintenance</h3>
+                <p>
+                  We provide top support and maintenance service to ensure
+                  flawless and sleek online E-Commerce experiences. The
+                  deployment maintenance has been taken care of, and it helps to
+                  maintain error-free E-Commerce websites.
+                </p>
+              </div>
+              <div class="ecom-content-item">
+                <h3>8. Multi Platforms</h3>
+                <p>
+                  Several E-Commerce platforms perform and bring multiple
+                  vendors into one. For those platforms, we provide world-class
+                  technology that flourishes and promotes solutions of
+                  multi-platforms. We enable E-Commerce platforms that
+                  facilitate selling and buying factors on E-Commerce websites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   | ECOMMERCE CONTENT PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   FOOTER PART START| |   |   |   |
+    =========================================================-->
+    <section id="footer">
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col-lg-4 m-auto">
+            <div class="footer-header text-center">
+              <img src="images/footer-logo.jpg" alt="logo" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 footer-clm">
+            <div class="footer-item d-flex text-center">
+              <div class="footer-icon">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                voluptate.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 footer-clm">
+            <div class="footer-item d-flex text-center">
+              <div
+                class="footer-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <p>+8801571772936</p>
+              <p>+8801971161450</p>
+            </div>
+          </div>
+          <div class="col-md-4 footer-clm">
+            <div class="footer-item d-flex text-center">
+              <div
+                class="footer-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <p>mdtanvirshagar@gmail.com</p>
+              <p>mdabdullahalmamun888@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 m-auto">
+            <div class="social-link-head text-center">
+              <h4>follow us</h4>
+            </div>
+            <div class="social-link text-center">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   |   FOOTER PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   COPYRIGHT PART START| |   |   |   |
+    =========================================================-->
+    <section id="copyright">
+      <div class="container copy-container">
+        <div class="row">
+          <div class="col-lg-6 m-auto">
+            <div class="copy-item text-center">
+              <p>
+                Copyright &copy; 2022. All rights reserved by
+                <span>TMT Soft.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   |   COPYRIGHT PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   BACK TO TOP PART END| |   |   |   |
+    =========================================================-->
+    <div class="back-to-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <!--=====================================================
+        |   |   |   |   BACK TO TOP PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   JAVASCRIPT LINK START| |   |   |   |
+    =========================================================-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--=====================================================
+        |   |   |   |   JAVASCRIPT LINK END| |   |   |   |
+    =========================================================-->
+  </body>
+</html>

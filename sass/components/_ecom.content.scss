@@ -1,0 +1,28 @@
+/*===========================================
+|   | ECOMMERCE CONTENT CSS START|   |   |   |   
+==============================================*/
+#ecom-content {
+    padding-bottom: 120px;
+  .ecom-content-text {
+    h2 {
+      @include font("Libre Baskerville", 20px, 400, $banner2);
+      line-height: 30px;
+      padding-bottom: 50px;
+    }
+    .ecom-content-item {
+      h3 {
+        @include font("Libre Baskerville", 20px, 400, $banner2);
+        line-height: 30px;
+        padding-bottom: 50px;
+      }
+      p{
+        @include font("Roboto", 16px, 400,$banner2);
+        line-height: 24px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+/*===========================================
+|   | ECOMMERCE CONTENT CSS END|   |   |   |   
+==============================================*/

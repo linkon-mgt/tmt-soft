@@ -1,0 +1,22 @@
+/*===========================================
+|   | ECOMMERCE BANNER CSS START|   |   |   |   
+==============================================*/
+#ecom-banner {
+  @include pgap(20px, 20px, 0, 0);
+  .ecom-banner-left {
+    h2 {
+      @include pgap(100px, 60px, 80px, 120px);
+      @include font("Libre Baskerville", 30px, 700, $banner3);
+      line-height: 45px;
+    }
+    p{
+        @include font("Libre Baskerville", 16px, 400, $banner2);
+        line-height: 24px;
+        padding-right: 250px;
+        padding-bottom: 20px;
+    }
+  }
+}
+/*===========================================
+|   | ECOMMERCE BANNER CSS END|   |   |   |   
+==============================================*/

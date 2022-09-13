@@ -1,0 +1,27 @@
+/*===========================================
+|   | WEB DEVELOPMENT UI CSS START|   |   |   
+==============================================*/
+#web-dev-ui{
+    @include pgap(160px,100px,0,0);
+    .web-dev-ui-heading{
+        h3{
+            @include font('Libre Baskerville', 48px, 700, $nav);
+            text-transform: capitalize;
+            font-style: italic;
+            padding-bottom: 20px;
+        }
+        h6{
+            @include font('Libre Baskerville', 18px, 700, #4e4545);
+            padding-bottom: 50px;
+        }
+    }
+    .dev-ui-content{
+        p{
+            @include font('Roboto', 16px, 400, #3a3333); 
+            line-height: 26px;
+        }
+    }
+}
+/*===========================================
+|   | WEB DEVELOPMENT UI CSS END|   |   |   
+==============================================*/

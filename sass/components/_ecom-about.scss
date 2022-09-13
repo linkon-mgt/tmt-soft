@@ -1,0 +1,21 @@
+/*===========================================
+|   | ECOMMERCE ABOUT CSS START|   |   |   |   
+==============================================*/
+#ecom-about{
+    @include pgap(50px,20px,0,0);
+    .ecom-about-content{
+        h3{
+            @include font("Libre Baskerville", 20px, 400, $banner2);
+            line-height: 30px;
+            padding-bottom: 50px;
+        }
+        p{
+            @include font("Roboto", 16px, 400, $nav);
+            line-height: 24px;
+            padding-bottom: 50px;
+        }
+    }
+}
+/*===========================================
+|   | ECOMMERCE ABOUT CSS END|   |   |   |   
+==============================================*/

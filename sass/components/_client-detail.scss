@@ -1,0 +1,33 @@
+/*===========================================
+|   | CLIENT DETAILS CSS START|   |   |   |   
+==============================================*/
+#client-detail{
+    @include pgap(120px,80px,0,0);
+    .client-content{
+        h3{
+            @include font('Roboto', 24px, 500, $banner2);
+            line-height: 28px;
+            text-transform: capitalize;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 120px;
+                height: 2px;
+                background-color: $clientafter;
+            }
+        }
+        p{
+            @include font('Roboto', 16px, 500, $banner2);
+            line-height: 24px;
+        }
+    }
+}
+/*===========================================
+|   | CLIENT DETAILS CSS END|   |   |   |   
+==============================================*/

@@ -1,0 +1,21 @@
+/*====================================================
+|   |  APP DEVELOPMENT OVERVIEW CSS START|   |   |   |   
+=======================================================*/
+#app-overview{
+    padding: 150px 0 200px;
+    .app-view-text{
+        h3{
+            @include font("Libre Baskerville", 30px, 700, #000);
+            padding-bottom: 40px;
+            text-transform: capitalize;
+        }
+        p{
+            @include font("Roboto", 18px, 400, #231F1F);
+            line-height: 27px;
+            padding-bottom: 30px;
+        }
+    }
+}
+/*====================================================
+|   |  APP DEVELOPMENT OVERVIEW CSS END|   |   |   |   
+=======================================================*/

@@ -38,8 +38,8 @@ body {
 |   |   |   NAVBAR CSS START|   |   |   |   
 ==============================================*/
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -50,8 +50,8 @@ body {
   padding-right: 0;
 }
 .navbar .nav-content .navbar-brand {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -100,6 +100,14 @@ body {
 .navbar .nav-content .navbar-nav .nav-item:hover .nav-link {
   color: #fff;
 }
+.navbar .nav-content .navbar-nav .nav-item:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.navbar .nav-content .navbar-nav .nav-item:hover .drop-down {
+  opacity: 1;
+  visibility: visible;
+}
 .navbar .nav-content .navbar-nav .nav-item .nav-link {
   padding-top: 0;
   padding-bottom: 0;
@@ -111,6 +119,11 @@ body {
   color: #231F1F;
   text-transform: capitalize;
   transition: all linear 0.3s;
+}
+.navbar .nav-content .navbar-nav .nav-item .nav-link svg {
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .navbar .bars {
   width: 50px;
@@ -153,22 +166,127 @@ body {
 .navbar #mobile-menu {
   position: absolute;
   top: 0;
-  left: -120%;
+  left: -150%;
   height: 100vh;
   width: 100vw;
   background-color: #d9d9d9;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 10px;
   text-align: center;
   transition: all linear 0.3s;
+  z-index: 9999;
+  overflow-y: scroll;
 }
-.navbar #mobile-menu .nav-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 0;
-  padding-right: 0;
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  text-align: left;
+  background-color: #d9d9d9;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-dot {
+  position: relative;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-dot::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #AC4A97;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-dot:hover::after {
+  background-color: #fff;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #d9d9d9;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  padding: 20px 20px;
+  transition: all linear 0.3s;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>');
+  background-size: 1rem;
+  background-color: #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>');
+  background-size: 1rem;
+  background-color: #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-body {
+  background-color: #d9d9d9;
+  padding: 10px 15px;
+  line-height: 1;
+  text-align: left;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p {
+  padding-left: 15px;
+  position: relative;
+  transition: all linear 0.3s;
+  padding: 10px;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p:hover {
+  background-color: #000;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p:hover a {
+  color: #fff;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p:hover::after {
+  background-color: #fff;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #AC4A97;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #231F1F;
+  text-transform: capitalize;
+  text-align: left;
+  margin-left: 15px;
 }
 .navbar #mobile-menu.slide-menu {
   left: 0;
@@ -182,6 +300,7 @@ body {
   background-color: #d9d9d9;
   -webkit-animation: sticky 1s linear;
           animation: sticky 1s linear;
+  padding: 25px 0;
   z-index: 999;
 }
 
@@ -202,6 +321,123 @@ body {
     top: 0;
   }
 }
+.mega-menu {
+  width: 1140px;
+  position: absolute;
+  top: 63px;
+  left: -50px;
+  transform: translateX(-50%);
+  background-color: #d9d9d9;
+  padding: 40px 20px;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+  z-index: 999;
+}
+.mega-menu .mega-coloum {
+  border-right: 2px solid #AC4A97;
+}
+.mega-menu .mega-coloum:last-child {
+  border-right: none;
+}
+.mega-menu .mega-coloum .about-company h3 {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 500;
+  color: #231F1F;
+  line-height: 36px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  position: relative;
+}
+.mega-menu .mega-coloum .about-company h3::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  width: 70px;
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: #AC4A97;
+}
+.mega-menu .mega-coloum .about-company ul {
+  margin-top: 30px;
+}
+.mega-menu .mega-coloum .about-company ul li {
+  padding: 10px 10px 10px;
+  position: relative;
+}
+.mega-menu .mega-coloum .about-company ul li::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #AC4A97;
+}
+.mega-menu .mega-coloum .about-company ul li a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #231F1F;
+  line-height: 24px;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+  display: inline-block;
+  padding: 5px;
+}
+.mega-menu .mega-coloum .about-company ul li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.drop-down {
+  position: absolute;
+  top: 63px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d9d9d9;
+  width: 270px;
+  transition: all linear 0.3s;
+  padding: 40px 20px 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+.drop-down li {
+  padding: 10px 10px 10px;
+  position: relative;
+}
+.drop-down li::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #AC4A97;
+}
+.drop-down li a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #231F1F;
+  line-height: 24px;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+  display: inline-block;
+  padding: 5px;
+}
+.drop-down li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
 /*===========================================
 |   |   |   NAVBAR CSS END|   |   |   |   
 ==============================================*/
@@ -588,7 +824,7 @@ body {
 |   |   |   BACK TO TOP CSS START|   |   |   |   
 ==============================================*/
 #page-link-up {
-  background-color: #d9d9d9;
+  background-color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 0;
@@ -724,4 +960,541 @@ body {
 
 /*===========================================
 |   |   |   ABOUT COUNTER CSS START|   |   |   |   
+==============================================*/
+#page-link-up {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#page-link-up .page-linkup {
+  margin-left: 20px;
+}
+#page-link-up .page-linkup span {
+  padding-right: 5px;
+}
+#page-link-up .page-linkup span svg {
+  color: #231F1F;
+  font-size: 16px;
+  font-weight: 300;
+}
+#page-link-up .page-linkup a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  padding-right: 5px;
+}
+
+/*====================================================
+|   |  APP DEVELOPMENT BANNER CSS START|   |   |   |   
+=======================================================*/
+#app-banner {
+  padding: 100px 0 10px;
+}
+#app-banner .app-ban-container {
+  border-bottom: 1px solid #B4A4A4;
+}
+#app-banner .app-ban-container .app-banner-head h2 {
+  font-family: "Libre Baskerville";
+  font-size: 45px;
+  font-weight: 700;
+  color: #060c9c;
+  text-transform: capitalize;
+  padding: 0 0 80px;
+  text-shadow: 5px 5px 5px #217598;
+}
+#app-banner .app-ban-container .app-banner-head p {
+  font-family: "Libre Baskerville";
+  font-size: 30px;
+  font-weight: 700;
+  color: #231F1F;
+  line-height: 45px;
+  padding-bottom: 80px;
+}
+#app-banner .app-ban-container .app-ban-image {
+  padding-bottom: 10px;
+}
+
+/*====================================================
+|   |  APP DEVELOPMENT BANNER CSS END|   |   |   |   
+=======================================================*/
+/*====================================================
+|   |  APP DEVELOPMENT OVERVIEW CSS START|   |   |   |   
+=======================================================*/
+#app-overview {
+  padding: 150px 0 200px;
+}
+#app-overview .app-view-text h3 {
+  font-family: "Libre Baskerville";
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 40px;
+  text-transform: capitalize;
+}
+#app-overview .app-view-text p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 27px;
+  padding-bottom: 30px;
+}
+
+/*====================================================
+|   |  APP DEVELOPMENT OVERVIEW CSS END|   |   |   |   
+=======================================================*/
+/*===========================================
+|   | ECOMMERCE BANNER CSS START|   |   |   |   
+==============================================*/
+#ecom-banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#ecom-banner .ecom-banner-left h2 {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  padding-right: 120px;
+  font-family: "Libre Baskerville";
+  font-size: 30px;
+  font-weight: 700;
+  color: #DC2E3D;
+  line-height: 45px;
+}
+#ecom-banner .ecom-banner-left p {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  padding-right: 250px;
+  padding-bottom: 20px;
+}
+
+/*===========================================
+|   | ECOMMERCE BANNER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | ECOMMERCE ABOUT CSS START|   |   |   |   
+==============================================*/
+#ecom-about {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#ecom-about .ecom-about-content h3 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+#ecom-about .ecom-about-content p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-bottom: 50px;
+}
+
+/*===========================================
+|   | ECOMMERCE ABOUT CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | ECOMMERCE CONTENT CSS START|   |   |   |   
+==============================================*/
+#ecom-content {
+  padding-bottom: 120px;
+}
+#ecom-content .ecom-content-text h2 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+#ecom-content .ecom-content-text .ecom-content-item h3 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+#ecom-content .ecom-content-text .ecom-content-item p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  padding-bottom: 50px;
+}
+
+/*===========================================
+|   | ECOMMERCE CONTENT CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | IOT BANNER CSS START|   |   |   |   
+==============================================*/
+#iot-banner {
+  background: linear-gradient(90deg, rgba(6, 6, 6, 0.5) 0%, rgba(9, 3, 5, 0.5) 100%), url(../images/iot-banner.jpg) no-repeat center/cover;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*===========================================
+|   | IOT BANNER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | IOT CONTENT CSS START|   |   |   |   
+==============================================*/
+#iot-content {
+  height: 1000px;
+  background-color: #cacaca;
+}
+
+/*===========================================
+|   | IOT CONTENT CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | TEAM MEMBER CSS START|   |   |   |   
+==============================================*/
+#team-banner {
+  padding-top: 175px;
+  padding-bottom: 250px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#team-banner .team-member {
+  padding-left: 100px;
+}
+#team-banner .team-member .team-image {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#team-banner .team-member .team-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/*===========================================
+|   | TEAM MEMBER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | CLIENT DETAILS CSS START|   |   |   |   
+==============================================*/
+#client-detail {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#client-detail .client-content h3 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  line-height: 28px;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#client-detail .client-content h3::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: #FD720D;
+}
+#client-detail .client-content p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 24px;
+}
+
+/*===========================================
+|   | CLIENT DETAILS CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | CLIENT MEMBER CSS START|   |   |   |   
+==============================================*/
+#client-member .client-top {
+  padding-bottom: 120px;
+}
+#client-member .client-top .client-top-content {
+  background-color: #d9d9d9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#client-member .client-top .client-top-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#client-member .client-top .client-top-content p::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F05340;
+}
+#client-member .client-top .client-top-content h3 {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+#client-member .client-top .client-top-content .client-top-icon svg {
+  color: #F89820;
+}
+#client-member .client-bottom {
+  padding-bottom: 100px;
+}
+
+/*===========================================
+|   | CLIENT MEMBER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | LEADERSHIP TEAM CSS START|   |   |   |   
+==============================================*/
+#leadership-team {
+  padding-top: 300px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#leadership-team .leader-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#leadership-team .leader-wrapper h2 {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  color: #3a3333;
+  text-transform: capitalize;
+  padding-bottom: 35px;
+}
+#leadership-team .leader-wrapper .leader-pic {
+  height: 315px;
+  width: 315px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+#leadership-team .leader-wrapper .leader-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#leadership-team .leader-wrapper .leader-item {
+  padding-top: 50px;
+}
+#leadership-team .leader-wrapper .leader-item h3 {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  color: #231F1F;
+  padding-bottom: 20px;
+}
+#leadership-team .leader-wrapper .leader-item h5 {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  color: #231F1F;
+  padding-bottom: 20px;
+}
+#leadership-team .leader-wrapper .leader-item p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-right: 100px;
+}
+
+/*===========================================
+|   | LEADERSHIP TEAM CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | WEB DEVELOPMENT BANNER CSS START|   |   |   
+==============================================*/
+#web-dev-banner {
+  background: url(../images/web-dev-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*===========================================
+|   | WEB DEVELOPMENT BANNER CSS END|   |   |   
+==============================================*/
+/*===========================================
+|   | WEB DEVELOPMENT UI CSS START|   |   |   
+==============================================*/
+#web-dev-ui {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#web-dev-ui .web-dev-ui-heading h3 {
+  font-family: "Libre Baskerville";
+  font-size: 48px;
+  font-weight: 700;
+  color: #231F1F;
+  text-transform: capitalize;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+#web-dev-ui .web-dev-ui-heading h6 {
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  color: #4e4545;
+  padding-bottom: 50px;
+}
+#web-dev-ui .dev-ui-content p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3333;
+  line-height: 26px;
+}
+
+/*===========================================
+|   | WEB DEVELOPMENT UI CSS END|   |   |   
+==============================================*/
+/*===========================================
+|   | WEB DEVELOPMENT CONTENT CSS START|   |   |   
+==============================================*/
+#web-dev-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#web-dev-content .dev-content-wrapper h3 {
+  font-family: "Libre Baskerville";
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  line-height: 35px;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+#web-dev-content .dev-content-wrapper p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+#web-dev-content .dev-content-wrapper .dev-content-item h2 {
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 8px;
+}
+#web-dev-content .dev-content-wrapper .dev-content-item p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+/*===========================================
+|   | WEB DEVELOPMENT CONTENT CSS END|   |   |   
+==============================================*/
+/*===========================================
+|   |DATA BANNER CSS START|   |   |   |   
+==============================================*/
+#data-banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#data-banner .data-banner-wrapper h3 {
+  padding-bottom: 30px;
+  font-family: "Libre Baskerville";
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  text-transform: capitalize;
+}
+
+/*===========================================
+|   | DATA BANNER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | DATA ITEM CSS START|   |   |   |   
+==============================================*/
+#data-content {
+  padding-top: 50px;
+  padding-bottom: 300px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#data-content .data-content-top {
+  padding-top: 0;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#data-content .data-content-top p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+}
+
+/*===========================================
+|   | DATA ITEM CSS END|   |   |   |   
 ==============================================*//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+/*====================================================
+|   |  APP DEVELOPMENT BANNER CSS START|   |   |   |   
+=======================================================*/
+#app-banner {
+  padding: 100px 0 10px;
+ 
+  .app-ban-container{
+    border-bottom: 1px solid #B4A4A4;
+    .app-banner-head {
+      h2 {
+        @include font("Libre Baskerville", 45px, 700, #060c9c);
+        text-transform: capitalize;
+        padding: 0 0 80px;
+        text-shadow: 5px 5px 5px #217598;
+      }
+      p{
+          @include font("Libre Baskerville", 30px, 700, #231F1F);
+          line-height: 45px;
+          padding-bottom: 80px;
+      }
+    }
+    .app-ban-image{
+      padding-bottom: 10px;
+    }
+  }
+  
+}
+/*====================================================
+|   |  APP DEVELOPMENT BANNER CSS END|   |   |   |   
+=======================================================*/

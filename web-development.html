@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMT Soft-Web Development</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+
+     <!--=====================================================
+        |   |   |   |   NAVBAR PART START| |   |   |   |
+    =========================================================-->
+    <nav class="navbar navbar-expand-lg mobile-menu">
+      <div class="container nav-content">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">about<i class="fa-solid fa-angle-down"></i></a>
+                      <!-- mega menu start -->
+                      <div class="row mega-menu">
+                          <div class="col-lg-4 mega-coloum">
+                              <div class="about-company">
+                                  <h3 class="text-center">about company</h3>
+                                  <ul>
+                                      <li>
+                                          <a href="client.html">client</a>
+                                      </li>
+                                      <li>
+                                          <a href="leadership.html">leadership</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 mega-coloum">
+                              <div class="about-company">
+                                  <h3 class="text-center">approach</h3>
+                                  <ul>
+                                      <li>
+                                          <a href="#">privacy policy</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">terms of ose</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 mega-coloum">
+                              <div class="about-company">
+                                  <h3 class="text-center">join us</h3>
+                                  <ul>
+                                      <li>
+                                          <a href="team.html">join our team</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">intern</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- mega menu end -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">service<i class="fa-solid fa-angle-down"></i></a>
+                      <!-- drop down menu start -->
+                      <ul class="drop-down">
+                          <li>
+                              <a href="app-development.html">app development</a>
+                          </li>
+                          <li>
+                              <a href="#">artificial intelligence</a>
+                          </li>
+                          <li>
+                              <a href="data-analysis.html">data analysis</a>
+                          </li>
+                          <li>
+                              <a href="web-development.html">web development</a>
+                          </li>
+                          <li>
+                              <a href="ecommerce.html">ecommerce</a>
+                          </li>
+                          <li>
+                              <a href="iot.html">IOT embedded</a>
+                          </li>
+                      </ul>
+                      <!-- drop down menu end -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">research</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">contact us</a>
+                  </li>
+              </ul>
+          </div>
+           <!-- custom menu bar start -->
+    <div class="bars d-flex align-items-center justify-content-center d-block d-lg-none">
+      <div class="bar-line line-one"></div>
+      <div class="bar-line line-two"></div>
+      <div class="bar-line line-three"></div>
+    </div>
+    <!-- custom menu bar end -->
+    <!-- mobile accordion menu end -->
+    <div id="mobile-menu" class="d-block d-lg-none">
+      <div class="accordion" id="port-accordion">
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="index.html" class="accor-button collapsed">
+                            Home
+                        </a>
+                </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordion-header-one">
+              <a href="about.html" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="false" aria-controls="collapse-one">
+                       about
+                    </a>
+            </h2>
+            <div id="collapse-one" class="accordion-collapse collapse" aria-labelledby="accordion-header-one" data-bs-parent="#port-accordion">
+              <div class="accordion-body" data-hotspot="1">
+                <div class="accordion" id="country-accordion-one">
+                  <div class="accordion-item" id="accordion-item-canada">
+                    <h2 class="accordion-header" id="accordion-header-canada">
+                      <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-canada" aria-expanded="false" aria-controls="collapse-canada">about company</a>
+                    </h2>
+                    <div id="collapse-canada" class="accordion-collapse collapse" aria-labelledby="accordion-header-canada" data-bs-parent="#country-accordion-one" >
+                      <div class="accordion-body">
+                        <p><a href="client.html">clients</a></p>
+                      </div>
+                      <div class="accordion-body">
+                        <p><a href="leadership.html">leadership</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-mexico">
+                    <h2 class="accordion-header" id="accordion-header-mexico">
+                      <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mexico" aria-expanded="false" aria-controls="collapse-mexico">approach</a>
+                    </h2>
+                    <div id="collapse-mexico" class="accordion-collapse collapse" aria-labelledby="accordion-header-mexico" data-bs-parent="#country-accordion-one" >
+                      <div class="accordion-body">
+                        <p><a href="#">privacy policy</a></p>
+                      </div>
+                      <div class="accordion-body">
+                        <p><a href="#">term of use</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-united-states-of-america">
+                    <h2 class="accordion-header" id="accordion-header-united-states-of-america">
+                      <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-united-states-of-america" aria-expanded="false" aria-controls="collapse-united-states-of-america">Others Solution</a>
+                    </h2>
+                    <div id="collapse-united-states-of-america" class="accordion-collapse collapse" aria-labelledby="accordion-header-united-states-of-america" data-bs-parent="#country-accordion-one">
+                      <div class="accordion-body">
+                        <p><a href="team.html">join our team</a></p>
+                      </div>
+                      <div class="accordion-body">
+                        <p><a href="#">intern</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordion-header-two">
+              <a href="#" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two" aria-expanded="true" aria-controls="collapse-two">
+                        service
+                    </a>
+            </h2>
+            <div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="accordion-header-two" data-bs-parent="#port-accordion" >
+              <div class="accordion-body" data-hotspot="2">
+                <div class="accordion" id="country-accordion-two">
+                  <div class="accordion-item" id="accordion-item-service1">
+                      <h2 class="accordion-header">
+                          <a href="app-development.html" class="accor-button accor-dot collapsed">
+                                    app development
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service2">
+                      <h2 class="accordion-header">
+                          <a href="#" class="accor-button accor-dot collapsed">
+                                    artificial intiligence
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service3">
+                      <h2 class="accordion-header">
+                          <a href="data-analysis.html" class="accor-button accor-dot collapsed">
+                                  data analysis
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service4">
+                      <h2 class="accordion-header">
+                          <a href="web-development.html" class="accor-button accor-dot collapsed">
+                                    web development
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service5">
+                      <h2 class="accordion-header">
+                          <a href="ecommerce.html" class="accor-button accor-dot collapsed">
+                                   ecommerce
+                                </a>
+                        </h2>
+                  </div>
+                  <div class="accordion-item" id="accordion-item-service6">
+                      <h2 class="accordion-header">
+                          <a href="iot.html" class="accor-button accor-dot collapsed">
+                                  IOT embedded
+                                </a>
+                        </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="#" class="accor-button collapsed">
+                           blog
+                        </a>
+                </h2>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="#" class="accor-button collapsed">
+                            research
+                        </a>
+                </h2>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <a href="#" class="accor-button collapsed">
+                            Contact us
+                        </a>
+                </h2>
+          </div>
+        </div>
+     </div>
+    <!--mobile accordion  menu end -->
+      </div>
+  </nav>
+  <!--=====================================================
+      |   |   |   |   NAVBAR PART END| |   |   |   |
+  =========================================================-->
+
+  <!--=====================================================
+      |   |   |   |   PAGE LINK PART STAR| |   |   |   |
+  =========================================================-->
+  <section id="page-link-up">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="page-linkup">
+                      <a href="index.html">Home</a>
+                      <span><i class="fa-solid fa-angle-right"></i></span>
+                      <a href="#">Service</a>
+                      <span><i class="fa-solid fa-angle-right"></i></span>
+                      <a href="web-development.html">Web Development</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--=====================================================
+      |   |   |   |   PAGE LINK PART END| |   |   |   |
+  =========================================================-->
+
+
+
+    <!--=====================================================
+        |   |   |    WEB DEV  BANNER PART START| |   |   |   |
+    =========================================================-->
+    <section id="web-dev-banner">
+      <div class="container"></div>
+    </section>
+    <!--=====================================================
+        |   |   |  WEB DEV  BANNER PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   WEB DEV  UI PART START| |   |   |   |
+    =========================================================-->
+    <section id="web-dev-ui">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto">
+            <div class="web-dev-ui-heading text-center">
+              <h3>Web development</h3>
+              <h6>UI technology</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="dev-ui-content">
+              <p>
+                We provide website development services that are on the cutting
+                edge of today’s technologies. Our Web developers are versed in
+                all Web technologies such as WordPress, Drupal, Magento,
+                Shopify. We even custom develop websites and web applications in
+                Python Django, NodeJS, Ruby on Rails, and .NET. Our technical
+                wizards mix a potent combination of nerd learning, geek fest
+                participation, Spock-like technical brainstorm sessions, and
+                endless hours watching online tech conferences and listening to
+                propeller head podcasts. Are these guys geeks? You bet they are!
+                Since 1998, Lounge Lizard has enjoyed coding over 600 Websites
+                from e-commerce, b2c, b2b, non-profit, to social networks. And
+                yes, we even used to code in Perl back in the beginning days of
+                the Internet.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="dev-ui-pic">
+              <img
+                src="images/web-dev-ui.jpg"
+                alt="web-ui"
+                class="w-100 img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   |   WEB DEV  UI PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   | WEB DEV CONTENT PART START| |   |   |   |
+    =========================================================-->
+    <section id="web-dev-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="dev-content-wrapper">
+              <h3>Process We Follow:</h3>
+              <p>How Our Experts Handle The Project Efficiently.</p>
+              <div class="dev-content-item">
+                <h2>1. Planning:</h2>
+                <p>
+                  Gather all the information and plan the project, craft the
+                  idea for the website and CMS development.
+                </p>
+              </div>
+              <div class="dev-content-item">
+                <h2>2. Web Designing:</h2>
+                <p>
+                  Our front-end designers will craft a stunning and striking
+                  responsive website following the wireframe, UI/UX design to
+                  prototype.
+                </p>
+              </div>
+              <div class="dev-content-item">
+                <h2>3. Define Content:</h2>
+                <p>
+                  A website is incomplete without content. Thus, we will put
+                  informative content on the and make it SEO-friendly.
+                </p>
+              </div>
+              <div class="dev-content-item">
+                <h2>4. Development:</h2>
+                <p>
+                  After deciding the website's objectives, it is time for
+                  development. The process is the pre-final stage of the
+                  website.
+                </p>
+              </div>
+              <div class="dev-content-item">
+                <h2>5. Testing:</h2>
+                <p>
+                  It is essential to conduct a test to ensure that the website
+                  is 100% bug-free and you get a seamless, user-friendly
+                  website.
+                </p>
+              </div>
+              <div class="dev-content-item">
+                <h2>6. Deployment:</h2>
+                <p>
+                  After everything is covered, from design to deployment, it is
+                  time to launch the website.
+                </p>
+              </div>
+              <div class="dev-content-item">
+                <h2>7. Post Deployment & Maintenance:</h2>
+                <p>
+                  After the website's launch, we will provide all support and
+                  answer every query after the deployment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   | WEB DEV CONTENT PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   FOOTER PART START| |   |   |   |
+    =========================================================-->
+    <section id="footer">
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col-lg-4 m-auto">
+            <div class="footer-header text-center">
+              <img src="images/footer-logo.jpg" alt="logo" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 footer-clm">
+            <div class="footer-item d-flex text-center">
+              <div class="footer-icon">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                voluptate.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 footer-clm">
+            <div class="footer-item d-flex text-center">
+              <div
+                class="footer-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <p>+8801571772936</p>
+              <p>+8801971161450</p>
+            </div>
+          </div>
+          <div class="col-md-4 footer-clm">
+            <div class="footer-item d-flex text-center">
+              <div
+                class="footer-icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <p>mdtanvirshagar@gmail.com</p>
+              <p>mdabdullahalmamun888@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 m-auto">
+            <div class="social-link-head text-center">
+              <h4>follow us</h4>
+            </div>
+            <div class="social-link text-center">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   |   FOOTER PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   COPYRIGHT PART START| |   |   |   |
+    =========================================================-->
+    <section id="copyright">
+      <div class="container copy-container">
+        <div class="row">
+          <div class="col-lg-6 m-auto">
+            <div class="copy-item text-center">
+              <p>
+                Copyright &copy; 2022. All rights reserved by
+                <span>TMT Soft.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=====================================================
+        |   |   |   |   COPYRIGHT PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   BACK TO TOP PART END| |   |   |   |
+    =========================================================-->
+    <div class="back-to-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <!--=====================================================
+        |   |   |   |   BACK TO TOP PART END| |   |   |   |
+    =========================================================-->
+
+    <!--=====================================================
+        |   |   |   |   JAVASCRIPT LINK START| |   |   |   |
+    =========================================================-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--=====================================================
+        |   |   |   |   JAVASCRIPT LINK END| |   |   |   |
+    =========================================================-->
+  </body>
+</html>
